@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3050b87a9f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <ul class="p-nested-dropdowns">
+            <li><a class="active" href="product.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
+
+            <li style=" margin-left: auto;">
+                <li><a href="#"><i class="fa fa-fw fa-search"></i> Search</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-user"></i> Login</a></li>
+                <li><a href="#"><i class="fa fa-fw fa-shopping-cart"></i>Cart</a></li>
+
+        </ul>
+    </header>
+    <div class="container">
+
+
+        <div class="cart transition is-open">
+            <h1>YOUR CART</h1>
+
+            <a href="#" class="btn btn-update">REMOVE ITEMS</a>
+
+
+            <div class="table">
+
+                <div class="layout-inline row th">
+                    <div class="col col-pro">Product</div>
+                    <div class="col col-price align-center ">
+                        Price
+                    </div>
+                    <div class="col col-price align-center ">
+                        Quantity
+                    </div>
+                </div>
+
+                <div class="layout-inline row">
+
+                    <div class="col col-pro layout-inline">
+                        <img src="docmartens.jpg" alt="boot" width="70%" />
+                        <p>Doc Martens</p>
+                    </div>
+
+                    <div class="col col-price col-numeric align-center ">
+                        <p>Ksh. 15,000/=</p>
+                    </div>
+
+                    <div class="col col-qty layout-inline">
+                        <a href="#" class="qty qty-minus">-</a>
+                        <input type="numeric" value="2" />
+                        <a href="#" class="qty qty-plus">+</a>
+                    </div>
+
+
+                </div>
+                <div class="layout-inline row">
+
+                    <div class="col col-pro layout-inline">
+                        <img src="boot.jpg" alt="boot" width="70%" />
+                        <p>Leather Hawk</p>
+                    </div>
+
+                    <div class="col col-price col-numeric align-center ">
+                        <p>Ksh. 15,000/=</p>
+                    </div>
+
+                    <div class="col col-qty layout-inline">
+                        <a href="#" class="qty qty-minus">-</a>
+                        <input type="numeric" value="1" />
+                        <a href="#" class="qty qty-plus">+</a>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="tf">
+                    <div class="row layout-inline">
+                        <div class="col">
+                            <p>VAT(6%) :</p>
+                        </div>
+                        <div class="col"><span>Ksh. 2700/=</span></div>
+                    </div>
+                    <div class="row layout-inline">
+                        <div class="col">
+                            <p>Delivery(15%) :</p>
+                        </div>
+                        <div class="col"><span>Ksh. 6750/=</span></div>
+                    </div>
+                    <div class="row layout-inline">
+                        <div class="col">
+                            <p>Service(10%) :<br>(if downloadable)</p>
+                        </div>
+                        <div class="col"><span> N/A</span></div>
+                    </div>
+                    <div class="row layout-inline">
+                        <div class="col">
+                            <p>Shipping Total :</p>
+                        </div>
+                        <div class="col"><span>Ksh. 54,450/=</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn btn-update">CHECKOUT</a>
+
+        </div>
+    </div>
+    <footer>
+        <!-- This is the footer with default 3 divs -->
+        <div>
+            <a href="# ">About us</a>
+            <a href=" ">Terms and Conditions</a>
+            <a href=" ">Privacy Policy</a>
+        </div>
+        <div>
+            <form action="#">
+
+                <input type="number" id="zip" name="zip code" placeholder="ZIP Code">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="footer ">
+            <p>All rights reserved, &copy;2020 Swafiyah Gichuki </p>
+        </div>
+    </footer>
+</body>
+
+</html>
