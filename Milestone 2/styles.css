@@ -1,983 +1,969 @@
-                                                                            /* My CSS was validated with no errors or warnings*/
-                                                                            
-                                                                            html,
-                                                                            body {
-                                                                                font-family: 'roboto', sans-serif;
-                                                                            }
-                                                                            
-                                                                            .p-nested-dropdowns {
-                                                                                /* Border */
-                                                                                border: 1px solid white;
-                                                                                display: flex;
-                                                                                /* Reset list styles */
-                                                                                list-style-type: none;
-                                                                                margin: 0;
-                                                                                padding: 0;
-                                                                            }
-                                                                            
-                                                                            .p-nested-dropdowns li {
-                                                                                /* Spacing */
-                                                                                padding: 8px;
-                                                                                /* Used to position the sub dropdown */
-                                                                                position: relative;
-                                                                            }
-                                                                            /* The sub dropdown */
-                                                                            
-                                                                            .p-nested-dropdowns ul {
-                                                                                /* Border */
-                                                                                border: 1px solid white;
-                                                                                /* Hidden by default */
-                                                                                display: none;
-                                                                                /* Absolute position */
-                                                                                left: 0;
-                                                                                position: absolute;
-                                                                                top: 100%;
-                                                                                /* Reset styles */
-                                                                                list-style-type: none;
-                                                                                margin: 0;
-                                                                                padding: 0;
-                                                                                /* Width */
-                                                                                width: 200px;
-                                                                                color: #1f7fda;
-                                                                            }
-                                                                            /* The second level sub dropdown */
-                                                                            
-                                                                            .p-nested-dropdowns ul ul {
-                                                                                left: 100%;
-                                                                                position: absolute;
-                                                                                top: 0;
-                                                                            }
-                                                                            /* Change background color of list item when being hovered */
-                                                                            
-                                                                            .p-nested-dropdowns li:hover {
-                                                                                background-color: rgba(0, 0, 0, 0.1);
-                                                                            }
-                                                                            /* Show the direct sub dropdown when hovering the list item */
-                                                                            
-                                                                            .p-nested-dropdowns li:hover>ul {
-                                                                                display: block;
-                                                                            }
-                                                                            
-                                                                            a {
-                                                                                text-decoration: none;
-                                                                                color: black;
-                                                                            }
-                                                                            
-                                                                            h1 {
-                                                                                font-size: 1.3em;
-                                                                                text-transform: uppercase;
-                                                                            }
-                                                                            
-                                                                            header {
-                                                                                font-family: 'Montserrat', sans-serif;
-                                                                                color: black;
-                                                                                font-size: 16px;
-                                                                                font-style: normal;
-                                                                                font-weight: 400;
-                                                                            }
-                                                                            /* Logo placeholder*/
-                                                                            /* div for Links in header */
-                                                                            
-                                                                            #headerLinks {
-                                                                                float: left;
-                                                                                width: calc( 100% - 139px);
-                                                                                text-align: left;
-                                                                                padding-top: 10px;
-                                                                                padding-bottom: 10px;
-                                                                                background-color: rgba(255, 255, 255, 1.00);
-                                                                            }
-                                                                            /* Links in header */
-                                                                            
-                                                                            #headerLinks a {
-                                                                                text-decoration: none;
-                                                                                color: rgba(146, 146, 146, 1.00);
-                                                                                padding-left: 66px;
-                                                                                font-size: 14px;
-                                                                            }
-                                                                            /* content of the site */
-                                                                            
-                                                                            #content {
-                                                                                clear: both;
-                                                                                overflow: auto;
-                                                                                padding-top: 29px;
-                                                                            }
-                                                                            /* Sidebar */
-                                                                            
-                                                                            #content .sidebar {
-                                                                                font-family: 'Montserrat', sans-serif;
-                                                                                color: rgba(146, 146, 146, 1.00);
-                                                                                float: left;
-                                                                                width: 20%;
-                                                                                padding-left: 3%;
-                                                                                padding-right: 3%;
-                                                                                text-align: center;
-                                                                                background-color: rgba(246, 246, 246, 1.00);
-                                                                                padding-top: 36px;
-                                                                                height: 784px;
-                                                                            }
-                                                                            /* main content of the site */
-                                                                            
-                                                                            #content .mainContent {
-                                                                                float: left;
-                                                                                width: 70%;
-                                                                                text-align: center;
-                                                                                padding-left: 4%;
-                                                                            }
-                                                                            /*menubar's properties for menus in sidebar */
-                                                                            
-                                                                            #content .sidebar #menubar {
-                                                                                text-align: left;
-                                                                                color: rgba(146, 146, 146, 1.00);
-                                                                                position: relative;
-                                                                                left: 0%;
-                                                                            }
-                                                                            /* Search field in sidebar */
-                                                                            
-                                                                            #content .sidebar #search {
-                                                                                width: 100%;
-                                                                                border-radius: 0px;
-                                                                                height: 42px;
-                                                                                text-align: center;
-                                                                                color: rgba(208, 207, 207, 1.00);
-                                                                                font-size: 14px;
-                                                                                ;
-                                                                                margin-bottom: 21px;
-                                                                            }
-                                                                            /* Whole page content */
-                                                                            
-                                                                            #mainWrapper {
-                                                                                width: 80%;
-                                                                                padding-left: 10%;
-                                                                            }
-                                                                            /*menu elements */
-                                                                            
-                                                                            .menu ul li {
-                                                                                list-style-type: none;
-                                                                                font-size: x-large;
-                                                                                position: relative;
-                                                                                left: -35px;
-                                                                                padding-top: 12px;
-                                                                            }
-                                                                            /* Product rows for catalog */
-                                                                            
-                                                                            #content .mainContent .productRow {
-                                                                                overflow: auto;
-                                                                                color: rgb(34, 149, 226);
-                                                                            }
-                                                                            /* Each product Information in the catalog */
-                                                                            
-                                                                            .mainContent .productRow .productInfo {
-                                                                                float: left;
-                                                                                padding-left: 5%;
-                                                                                padding-right: 5%;
-                                                                                width: 22%;
-                                                                            }
-                                                                            /* Prices of a products in catalog */
-                                                                            
-                                                                            .productRow .productInfo .price {
-                                                                                font-family: 'Montserrat', sans-serif;
-                                                                                color: rgba(146, 146, 146, 1.00);
-                                                                                font-size: 22px;
-                                                                                position: relative;
-                                                                                top: -20px;
-                                                                            }
-                                                                            /* Content holder for products in catalog*/
-                                                                            
-                                                                            .productRow .productInfo .productContent {
-                                                                                position: relative;
-                                                                                top: -37px;
-                                                                                font-size: 14px;
-                                                                                font-family: source-sans-pro, sans-serif;
-                                                                                font-style: normal;
-                                                                                font-weight: 200;
-                                                                                color: rgb(207, 207, 208);
-                                                                                white-space: pre-wrap;
-                                                                            }
-                                                                            /* Buy button for products in catalog */
-                                                                            
-                                                                            .productRow .productInfo .buyButton {
-                                                                                position: relative;
-                                                                                top: -48px;
-                                                                                width: 84%;
-                                                                                background-color: rgb(207, 207, 208);
-                                                                                height: 35px;
-                                                                                color: #1f7fda;
-                                                                                border-style: none;
-                                                                                font-size: 14px;
-                                                                                text-transform: uppercase;
-                                                                                margin-top: 8px;
-                                                                            }
-                                                                            /* footer */
-                                                                            
-                                                                            #mainWrapper footer {
-                                                                                clear: both;
-                                                                                overflow: auto;
-                                                                                background-color: rgba(208, 207, 207, 1.00);
-                                                                                font-family: source-sans-pro, sans-serif;
-                                                                                font-style: normal;
-                                                                                font-weight: 200;
-                                                                                line-height: 1.8;
-                                                                                padding-top: 22px;
-                                                                                padding-left: 22px;
-                                                                                text-align: center;
-                                                                                padding-bottom: 22px;
-                                                                                padding-right: 22px;
-                                                                            }
-                                                                            /*Each footer content */
-                                                                            
-                                                                            #mainWrapper footer div {
-                                                                                width: 27%;
-                                                                                float: left;
-                                                                                padding-left: 4%;
-                                                                                padding-right: 2%;
-                                                                                color: rgba(255, 255, 255, 1.00);
-                                                                                text-align: justify;
-                                                                            }
-                                                                            /* Links in footer */
-                                                                            
-                                                                            footer div a {
-                                                                                color: rgba(146, 146, 146, 1.00);
-                                                                                display: block;
-                                                                                text-decoration: none;
-                                                                                text-align: center;
-                                                                            }
-                                                                            /* Product's images in catalog */
-                                                                            
-                                                                            .productInfo div img {
-                                                                                width: 100%;
-                                                                            }
-                                                                            /*Links in sidebar */
-                                                                            
-                                                                            .sidebar #menubar .menu ul li a {
-                                                                                color: rgba(146, 146, 146, 1.00);
-                                                                                text-decoration: none;
-                                                                            }
-                                                                            
-                                                                            .sidebar #menubar .menu ul li a:hover {
-                                                                                color: rgba(107, 97, 97, 1.00);
-                                                                                text-decoration: none;
-                                                                            }
-                                                                            /* Menu headings in sidebar */
-                                                                            
-                                                                            #menubar .menu h2 {
-                                                                                font-size: 14px;
-                                                                            }
-                                                                            /*Links under menus in sidebar */
-                                                                            
-                                                                            #menubar .menu ul li a {
-                                                                                font-size: 14px;
-                                                                            }
-                                                                            /* Menus in sidebar */
-                                                                            
-                                                                            .sidebar #menubar .menu {
-                                                                                margin-bottom: 29px;
-                                                                            }
-                                                                            /* Container for links in footer */
-                                                                            
-                                                                            footer .footerlinks {
-                                                                                margin-top: -15px;
-                                                                            }
-                                                                            /* Media query for tablets */
-                                                                            
-                                                                            @media screen and (max-width:700px) {
-                                                                                /* search field in sidebar */
-                                                                                #content .sidebar #search {
-                                                                                    display: none;
-                                                                                }
-                                                                                /* sidebar */
-                                                                                #content .sidebar {
-                                                                                    float: none;
-                                                                                    width: 100%;
-                                                                                    height: auto;
-                                                                                    overflow: auto;
-                                                                                    padding-left: 12%;
-                                                                                    padding-top: 0px;
-                                                                                }
-                                                                                /* horizontal separators in sidebar */
-                                                                                #content .sidebar hr {
-                                                                                    display: none;
-                                                                                }
-                                                                                /*The sidebar and maincontent of page */
-                                                                                #content {
-                                                                                    position: relative;
-                                                                                    top: -22px;
-                                                                                    width: 100%;
-                                                                                    overflow: hidden;
-                                                                                }
-                                                                                /*menu headings in sidebar */
-                                                                                #menubar .menu h2 {
-                                                                                    display: inline;
-                                                                                    font-size: medium;
-                                                                                    padding-right: 6%;
-                                                                                }
-                                                                                /* Unordered List of links */
-                                                                                #menubar .menu ul {
-                                                                                    display: inline;
-                                                                                }
-                                                                                /*list elements */
-                                                                                #menubar .menu ul li {
-                                                                                    display: inline;
-                                                                                    font-size: medium;
-                                                                                    padding-left: 0%;
-                                                                                    padding-right: 3%;
-                                                                                }
-                                                                                /*The link to be hidden in tablet view */
-                                                                                .sidebar #menubar .menu ul .notimp {
-                                                                                    display: none;
-                                                                                }
-                                                                                /* menus in sidebar */
-                                                                                .sidebar #menubar .menu {
-                                                                                    width: 100%;
-                                                                                    text-align: center;
-                                                                                    position: relative;
-                                                                                    top: 16px;
-                                                                                }
-                                                                                /*menubar in sidebar */
-                                                                                #content .sidebar #menubar {
-                                                                                    position: relative;
-                                                                                    left: -7%;
-                                                                                    overflow: hidden;
-                                                                                    width: 95%;
-                                                                                    padding-top: 0px;
-                                                                                }
-                                                                                /* offer banners content */
-                                                                                #mainWrapper #offer p {
-                                                                                    font-size: small;
-                                                                                }
-                                                                                /* main content region of page */
-                                                                                #mainWrapper #content .mainContent {
-                                                                                    overflow: hidden;
-                                                                                    width: 95%;
-                                                                                    margin-top: 40px;
-                                                                                }
-                                                                                /* Prices of products in catalog view */
-                                                                                .productRow .productInfo .price {
-                                                                                    font-size: 19px;
-                                                                                }
-                                                                                /* Content holders in catalog view */
-                                                                                .productRow .productInfo .productContent {
-                                                                                    font-size: 16px;
-                                                                                }
-                                                                                /* Buy buttons in catalog view */
-                                                                                .productRow .productInfo .buyButton {
-                                                                                    font-size: 15px;
-                                                                                }
-                                                                                /* Container for links in footer */
-                                                                                #mainWrapper footer .footerlinks {
-                                                                                    float: none;
-                                                                                    width: 100%;
-                                                                                    position: relative;
-                                                                                    top: 17px;
-                                                                                    clear: both;
-                                                                                    text-align: center;
-                                                                                    left: 0%;
-                                                                                    padding-bottom: 19px;
-                                                                                }
-                                                                                /* Container for each footer divisions */
-                                                                                #mainWrapper footer div {
-                                                                                    width: 44%;
-                                                                                    text-align: justify;
-                                                                                    font-size: 15px;
-                                                                                }
-                                                                                /* Links in footer */
-                                                                                .footerlinks p a {
-                                                                                    padding-top: 0px;
-                                                                                    padding-bottom: 0px;
-                                                                                    display: inline;
-                                                                                    padding-right: 35px;
-                                                                                }
-                                                                                /* Footer region */
-                                                                                #mainWrapper footer {
-                                                                                    padding-left: 16px;
-                                                                                    overflow: hidden;
-                                                                                }
-                                                                                /* Links in header */
-                                                                                header #headerLinks a {
-                                                                                    padding-left: 0px;
-                                                                                    padding-right: 30px;
-                                                                                }
-                                                                                /* Offer- Text banner */
-                                                                                #mainWrapper #offer {
-                                                                                    padding-left: 22%;
-                                                                                }
-                                                                                /* Paragraphs in footer */
-                                                                                footer .footerlinks p {
-                                                                                    display: inline;
-                                                                                }
-                                                                            }
-                                                                            /*media query for small screen devices */
-                                                                            
-                                                                            @media screen and (max-width:480px) {
-                                                                                /*Container for links in header */
-                                                                                #mainWrapper header #headerLinks {
-                                                                                    width: 100%;
-                                                                                    text-align: center;
-                                                                                    background-color: rgba(190, 190, 190, 1.00);
-                                                                                    padding-bottom: 21px;
-                                                                                }
-                                                                                /* Logo placeholder*/
-                                                                                #mainWrapper header #logo {
-                                                                                    width: 100%;
-                                                                                    text-align: center;
-                                                                                }
-                                                                                /* Links in header */
-                                                                                header #headerLinks a {
-                                                                                    text-align: center;
-                                                                                    padding-right: 15px;
-                                                                                    padding-left: 0px;
-                                                                                }
-                                                                                /*Offer - Text Banner */
-                                                                                #mainWrapper #offer {
-                                                                                    padding-left: 0px;
-                                                                                    text-align: center;
-                                                                                }
-                                                                                /* Menubar in sidebar */
-                                                                                #content .sidebar #menubar {
-                                                                                    position: relative;
-                                                                                    left: -8%;
-                                                                                    text-align: center;
-                                                                                }
-                                                                                /*Menu headings in sidebar */
-                                                                                #menubar .menu h2 {
-                                                                                    width: 100%;
-                                                                                    display: block;
-                                                                                }
-                                                                                /* Each product in catalog view */
-                                                                                .mainContent .productRow .productInfo {
-                                                                                    width: 100%;
-                                                                                    display: block;
-                                                                                    padding-left: 0px;
-                                                                                    padding-right: 0px;
-                                                                                    position: relative;
-                                                                                    left: -2%;
-                                                                                }
-                                                                                #mainWrapper footer div {
-                                                                                    width: 100%;
-                                                                                    margin-left: -16px;
-                                                                                    text-align: justify;
-                                                                                    padding-bottom: 16px;
-                                                                                    overflow: auto;
-                                                                                }
-                                                                                /* Unordered list for menu elements */
-                                                                                .menu ul {
-                                                                                    position: relative;
-                                                                                    padding-left: 24%;
-                                                                                }
-                                                                                /* Container for links in footer */
-                                                                                #mainWrapper footer .footerlinks {
-                                                                                    padding-left: 8%;
-                                                                                }
-                                                                                /* Main content which excludes the sidebar */
-                                                                                #mainwrapper #content .mainContent {
-                                                                                    margin-top: -81px;
-                                                                                    text-align: center;
-                                                                                    width: 100%;
-                                                                                    padding-left: 0px;
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            input[type=number],
-                                                                            select {
-                                                                                width: 100%;
-                                                                                padding: 12px 20px;
-                                                                                margin: 8px 0;
-                                                                                display: inline-block;
-                                                                                border: 1px solid #ccc;
-                                                                                border-radius: 4px;
-                                                                                box-sizing: border-box;
-                                                                            }
-                                                                            
-                                                                            input[type=submit] {
-                                                                                width: 100%;
-                                                                                background-color: #1f7fda;
-                                                                                color: white;
-                                                                                padding: 14px 20px;
-                                                                                margin: 8px 0;
-                                                                                border: none;
-                                                                                border-radius: 4px;
-                                                                                cursor: pointer;
-                                                                            }
-                                                                            
-                                                                            input[type=submit]:hover {
-                                                                                background-color: #1f80dada;
-                                                                            }
-                                                                            
-                                                                            .button {
-                                                                                border-radius: 4px;
-                                                                                background-color: #1f7fda;
-                                                                                border: none;
-                                                                                color: #FFFFFF;
-                                                                                text-align: center;
-                                                                                font-size: 28px;
-                                                                                padding: 20px;
-                                                                                width: 200px;
-                                                                                transition: all 0.5s;
-                                                                                cursor: pointer;
-                                                                                margin: 5px;
-                                                                            }
-                                                                            
-                                                                            .button span {
-                                                                                cursor: pointer;
-                                                                                display: inline-block;
-                                                                                position: relative;
-                                                                                transition: 0.5s;
-                                                                            }
-                                                                            
-                                                                            .button span:after {
-                                                                                content: '\00bb';
-                                                                                position: absolute;
-                                                                                opacity: 0;
-                                                                                top: 0;
-                                                                                right: -20px;
-                                                                                transition: 0.5s;
-                                                                            }
-                                                                            
-                                                                            .button:hover span {
-                                                                                padding-right: 25px;
-                                                                            }
-                                                                            
-                                                                            .button:hover span:after {
-                                                                                opacity: 1;
-                                                                                right: 0;
-                                                                            }
-                                                                            
-                                                                            .hero {
-                                                                                /* Sizing */
-                                                                                width: 100vw;
-                                                                                height: 100vh;
-                                                                                /* Flexbox stuff */
-                                                                                display: flex;
-                                                                                justify-content: center;
-                                                                                align-items: center;
-                                                                                /* Text styles */
-                                                                                text-align: center;
-                                                                                color: white;
-                                                                                /* ADD THIS LINE */
-                                                                                /* Background styles */
-                                                                                background-image: url('header.jpg');
-                                                                                background-size: cover;
-                                                                                background-position: center center;
-                                                                                background-repeat: no-repeat;
-                                                                                background-attachment: fixed;
-                                                                            }
-                                                                            
-                                                                            .hero h1 {
-                                                                                /* Text styles */
-                                                                                font-size: 5em;
-                                                                                /* Margins */
-                                                                                margin-top: 0;
-                                                                                margin-bottom: 0.5em;
-                                                                            }
-                                                                            
-                                                                            .hero .btn {
-                                                                                /* Positioning and sizing */
-                                                                                display: block;
-                                                                                width: 200px;
-                                                                                /* Padding and margins */
-                                                                                padding: 1em;
-                                                                                margin-top: 50px;
-                                                                                margin-left: auto;
-                                                                                margin-right: auto;
-                                                                                /* Text styles */
-                                                                                color: white;
-                                                                                /* CHANGE THIS LINE */
-                                                                                text-decoration: none;
-                                                                                font-size: 1.5em;
-                                                                                /* Border styles */
-                                                                                border: 3px solid white;
-                                                                                /* CHANGE THIS LINE */
-                                                                                border-radius: 20px;
-                                                                                background-color: #1f7fda;
-                                                                            }
-                                                                            
-                                                                            .btn span {
-                                                                                cursor: pointer;
-                                                                                display: inline-block;
-                                                                                position: relative;
-                                                                                transition: 0.5s;
-                                                                            }
-                                                                            
-                                                                            .btn span:after {
-                                                                                position: absolute;
-                                                                                opacity: 0;
-                                                                                top: 0;
-                                                                                right: -20px;
-                                                                                transition: 0.5s;
-                                                                            }
-                                                                            
-                                                                            .btn:hover span {
-                                                                                padding-right: 25px;
-                                                                            }
-                                                                            
-                                                                            .btn:hover span:after {
-                                                                                opacity: 1;
-                                                                                right: 0;
-                                                                            }
-                                                                            /*product page*/
-                                                                            
-                                                                            .product-filter {
-                                                                                display: flex;
-                                                                                padding: 30px 0;
-                                                                            }
-                                                                            
-                                                                            .sort {
-                                                                                display: flex;
-                                                                                align-self: flex-end;
-                                                                                float: left;
-                                                                            }
-                                                                            
-                                                                            .collection-sort {
-                                                                                display: flex;
-                                                                                flex-direction: column;
-                                                                            }
-                                                                            
-                                                                            .collection-sort:first-child {
-                                                                                padding-right: 20px;
-                                                                            }
-                                                                            
-                                                                            label {
-                                                                                color: #666;
-                                                                                font-size: 10px;
-                                                                                font-weight: 500;
-                                                                                line-height: 2em;
-                                                                                text-transform: uppercase;
-                                                                            }
-                                                                            
-                                                                            .products {
-                                                                                display: flex;
-                                                                                flex-wrap: wrap;
-                                                                            }
-                                                                            
-                                                                            .product-card {
-                                                                                display: flex;
-                                                                                flex-direction: column;
-                                                                                padding: 2%;
-                                                                                flex: 1 16%;
-                                                                                background-color: #FFF;
-                                                                                box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.25);
-                                                                            }
-                                                                            
-                                                                            .product-image img {
-                                                                                width: 100%;
-                                                                            }
-                                                                            
-                                                                            .product-info {
-                                                                                margin-top: auto;
-                                                                                padding-top: 20px;
-                                                                                text-align: center;
-                                                                            }
-                                                                            
-                                                                            @media (max-width: 920px) {
-                                                                                .product-card {
-                                                                                    flex: 1 21%;
-                                                                                }
-                                                                                .products .product-card:first-child,
-                                                                                .products .product-card:nth-child(2) {
-                                                                                    flex: 2 46%;
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            @media (max-width: 600px) {
-                                                                                .product-card {
-                                                                                    flex: 1 46%;
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            @media (max-width: 480px) {
-                                                                                h1 {
-                                                                                    margin-bottom: 20px;
-                                                                                }
-                                                                                .product-filter {
-                                                                                    flex-direction: column;
-                                                                                }
-                                                                                .sort {
-                                                                                    align-self: flex-start;
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            .product-info .btn {
-                                                                                /* Positioning and sizing */
-                                                                                display: block;
-                                                                                width: 100px;
-                                                                                /* Padding and margins */
-                                                                                padding: 1em;
-                                                                                margin-top: 50px;
-                                                                                margin-left: auto;
-                                                                                margin-right: auto;
-                                                                                /* Text styles */
-                                                                                color: white;
-                                                                                /* CHANGE THIS LINE */
-                                                                                text-decoration: none;
-                                                                                /* Border styles */
-                                                                                border: 3px solid white;
-                                                                                /* CHANGE THIS LINE */
-                                                                                border-radius: 20px;
-                                                                                background-color: #1f7fda;
-                                                                            }
-                                                                            /*details page*/
-                                                                            
-                                                                            @media only screen and (max-device-width: 480px) {
-                                                                                .box {
-                                                                                    margin: 20px;
-                                                                                }
-                                                                                .product-info {
-                                                                                    margin: 20px;
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            .container {
-                                                                                display: flex;
-                                                                                justify-content: center;
-                                                                                margin-top: 50px;
-                                                                                font-family: 'Open Sans', sans-serif;
-                                                                            }
-                                                                            
-                                                                            .box {
-                                                                                width: 700px;
-                                                                                border-radius: 10px;
-                                                                                box-shadow: 0 0 30px 0 #999;
-                                                                            }
-                                                                            
-                                                                            .product-img {
-                                                                                float: left;
-                                                                                margin-top: 20px;
-                                                                                transition: all 0.5s linear;
-                                                                            }
-                                                                            
-                                                                            product-img :hover {
-                                                                                transform: scale(1.03);
-                                                                            }
-                                                                            
-                                                                            .product-info {
-                                                                                float: right;
-                                                                                margin-top: 20px;
-                                                                                margin-right: 40px;
-                                                                            }
-                                                                            
-                                                                            h1 {
-                                                                                margin-bottom: 50px;
-                                                                                font-weight: bold;
-                                                                                font-size: 2.5em;
-                                                                                color: #333;
-                                                                                font-family: 'Archivo Black', sans-serif;
-                                                                            }
-                                                                            
-                                                                            .price-b {
-                                                                                margin-top: -40px;
-                                                                                font-size: 35px;
-                                                                                font-weight: bolder;
-                                                                                color: #1f7fda
-                                                                            }
-                                                                            
-                                                                            .description {
-                                                                                margin-top: -20px;
-                                                                                margin-right: 10px;
-                                                                                font-weight: bold;
-                                                                                color: #555;
-                                                                            }
-                                                                            
-                                                                            .color {
-                                                                                margin-top: 25px;
-                                                                                outline: none;
-                                                                                border: 2px solid #999;
-                                                                                padding: 5px;
-                                                                                border-radius: 5px;
-                                                                            }
-                                                                            
-                                                                            .qty {
-                                                                                margin-top: 25px;
-                                                                                outline: none;
-                                                                                border: 2px solid #999;
-                                                                                padding: 5px;
-                                                                                border-radius: 5px;
-                                                                            }
-                                                                            
-                                                                            button {
-                                                                                margin-top: 10px;
-                                                                                background: #333;
-                                                                                font-size: 1em;
-                                                                                letter-spacing: .1em;
-                                                                                text-decoration: none;
-                                                                                color: #fff;
-                                                                                padding: 15px 30px;
-                                                                                border: 0;
-                                                                                border-radius: 10px;
-                                                                                transition: all 0.3s linear;
-                                                                                margin-left: 50px;
-                                                                            }
-                                                                            
-                                                                            button:hover {
-                                                                                background: #666;
-                                                                            }
-                                                                            /*cart.html*/
-                                                                            
-                                                                            .container {
-                                                                                max-width: 75em;
-                                                                                width: 95%;
-                                                                                margin: 40px auto;
-                                                                                overflow: hidden;
-                                                                                border-radius: 0.6em;
-                                                                                background: #ecf0f1;
-                                                                                box-shadow: 0 0.5em 0 rgba(138, 148, 152, 0.2);
-                                                                            }
-                                                                            
-                                                                            .heading {
-                                                                                padding: 1em;
-                                                                                position: relative;
-                                                                                z-index: 1;
-                                                                                color: #f7f7f7;
-                                                                                background: #1f7fda
-                                                                            }
-                                                                            
-                                                                            .cart {
-                                                                                margin: 2.5em;
-                                                                                overflow: hidden;
-                                                                            }
-                                                                            
-                                                                            .cart.is-closed {
-                                                                                height: 0;
-                                                                                margin-top: -2.5em;
-                                                                            }
-                                                                            
-                                                                            .table {
-                                                                                background: #ffffff;
-                                                                                border-radius: 0.6em;
-                                                                                clear: both;
-                                                                                margin-bottom: 1.8em;
-                                                                            }
-                                                                            
-                                                                            .layout-inline>* {
-                                                                                display: inline-block;
-                                                                            }
-                                                                            
-                                                                            .align-center {
-                                                                                text-align: center;
-                                                                            }
-                                                                            
-                                                                            .th {
-                                                                                background: #1f7fda;
-                                                                                color: #fff;
-                                                                                text-transform: uppercase;
-                                                                                font-weight: bold;
-                                                                                font-size: 1.5em;
-                                                                            }
-                                                                            
-                                                                            .tf {
-                                                                                background: #1f7fda;
-                                                                                text-transform: uppercase;
-                                                                                text-align: right;
-                                                                                font-size: 1.2em;
-                                                                            }
-                                                                            
-                                                                            .tf p {
-                                                                                color: #fff;
-                                                                                font-weight: bold;
-                                                                            }
-                                                                            
-                                                                            .col {
-                                                                                padding: 1em;
-                                                                                width: 12%;
-                                                                            }
-                                                                            
-                                                                            .col-pro {
-                                                                                width: 44%;
-                                                                            }
-                                                                            
-                                                                            .col-pro>* {
-                                                                                vertical-align: middle;
-                                                                            }
-                                                                            
-                                                                            .col-qty {
-                                                                                text-align: center;
-                                                                                width: 17%;
-                                                                            }
-                                                                            
-                                                                            .col-numeric p {
-                                                                                font: bold 1.8em helvetica;
-                                                                            }
-                                                                            
-                                                                            .col-total p {
-                                                                                color: #12c8b1;
-                                                                            }
-                                                                            
-                                                                            .tf .col {
-                                                                                width: 20%;
-                                                                            }
-                                                                            
-                                                                            .row>div {
-                                                                                vertical-align: middle;
-                                                                            }
-                                                                            
-                                                                            .row-bg2 {
-                                                                                background: #f7f7f7;
-                                                                            }
-                                                                            
-                                                                            .visibility-cart {
-                                                                                position: absolute;
-                                                                                color: #fff;
-                                                                                top: 0.5em;
-                                                                                right: 0.5em;
-                                                                                font: bold 2em arial;
-                                                                                border: 0.16em solid #fff;
-                                                                                border-radius: 2.5em;
-                                                                                padding: 0 0.22em 0 0.25em;
-                                                                            }
-                                                                            
-                                                                            .col-qty>* {
-                                                                                vertical-align: middle;
-                                                                            }
-                                                                            
-                                                                            .col-qty>input {
-                                                                                max-width: 2.6em;
-                                                                            }
-                                                                            
-                                                                            a.qty {
-                                                                                line-height: 1em;
-                                                                                border-radius: 2em;
-                                                                                font-size: 2.5em;
-                                                                                font-weight: bold;
-                                                                                text-align: center;
-                                                                                background: #43ace3;
-                                                                                color: #fff;
-                                                                            }
-                                                                            
-                                                                            a.qty:hover {
-                                                                                background: #3b9ac6;
-                                                                            }
-                                                                            
-                                                                            .btn {
-                                                                                padding: 10px 30px;
-                                                                                border-radius: 0.3em;
-                                                                                font-size: 1.4em;
-                                                                                font-weight: bold;
-                                                                                background: #43ace3;
-                                                                                color: #fff;
-                                                                                box-shadow: 0 3px 0 rgba(59, 154, 198, 1)
-                                                                            }
-                                                                            
-                                                                            .btn:hover {
-                                                                                box-shadow: 0 3px 0 rgba(59, 154, 198, 0)
-                                                                            }
-                                                                            
-                                                                            .btn-update {
-                                                                                float: right;
-                                                                                margin: 0 0 1.5em 0;
-                                                                            }
-                                                                            
-                                                                            .transition {
-                                                                                transition: all 0.3s ease-in-out;
-                                                                            }
-                                                                            
-                                                                            @media screen and ( max-width: 755px) {
-                                                                                .container {
-                                                                                    width: 98%;
-                                                                                }
-                                                                                .col-pro {
-                                                                                    width: 35%;
-                                                                                }
-                                                                                .col-qty {
-                                                                                    width: 22%;
-                                                                                }
-                                                                            }
-                                                                            
-                                                                            @media screen and ( max-width: 591px) {}
+ /* My CSS was validated with no errors or warnings*/
+ 
+ html,
+ body {
+     font-family: 'roboto', sans-serif;
+ }
+ 
+ .p-nested-dropdowns {
+     /* Border */
+     border: 1px solid white;
+     display: flex;
+     /* Reset list styles */
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .p-nested-dropdowns li {
+     /* Spacing */
+     padding: 8px;
+     /* Used to position the sub dropdown */
+     position: relative;
+ }
+ /* The sub dropdown */
+ 
+ .p-nested-dropdowns ul {
+     /* Border */
+     border: 1px solid white;
+     /* Hidden by default */
+     display: none;
+     /* Absolute position */
+     left: 0;
+     position: absolute;
+     top: 100%;
+     /* Reset styles */
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     /* Width */
+     width: 200px;
+     color: #1f7fda;
+ }
+ /* The second level sub dropdown */
+ 
+ .p-nested-dropdowns ul ul {
+     left: 100%;
+     position: absolute;
+     top: 0;
+ }
+ /* Change background color of list item when being hovered */
+ 
+ .p-nested-dropdowns li:hover {
+     background-color: rgba(0, 0, 0, 0.1);
+ }
+ /* Show the direct sub dropdown when hovering the list item */
+ 
+ .p-nested-dropdowns li:hover>ul {
+     display: block;
+ }
+ 
+ a {
+     text-decoration: none;
+     color: black;
+ }
+ 
+ h1 {
+     font-size: 1.3em;
+     text-transform: uppercase;
+ }
+ 
+ header {
+     font-family: 'Montserrat', sans-serif;
+     color: black;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+ }
+ /* Logo placeholder*/
+ /* div for Links in header */
+ 
+ #headerLinks {
+     float: left;
+     width: calc( 100% - 139px);
+     text-align: left;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     background-color: rgba(255, 255, 255, 1.00);
+ }
+ /* Links in header */
+ 
+ #headerLinks a {
+     text-decoration: none;
+     color: rgba(146, 146, 146, 1.00);
+     padding-left: 66px;
+     font-size: 14px;
+ }
+ /* content of the site */
+ 
+ #content {
+     clear: both;
+     overflow: auto;
+     padding-top: 29px;
+ }
+ /* Sidebar */
+ 
+ #content .sidebar {
+     font-family: 'Montserrat', sans-serif;
+     color: rgba(146, 146, 146, 1.00);
+     float: left;
+     width: 20%;
+     padding-left: 3%;
+     padding-right: 3%;
+     text-align: center;
+     background-color: rgba(246, 246, 246, 1.00);
+     padding-top: 36px;
+     height: 784px;
+ }
+ /* main content of the site */
+ 
+ #content .mainContent {
+     float: left;
+     width: 70%;
+     text-align: center;
+     padding-left: 4%;
+ }
+ /*menubar's properties for menus in sidebar */
+ 
+ #content .sidebar #menubar {
+     text-align: left;
+     color: rgba(146, 146, 146, 1.00);
+     position: relative;
+     left: 0%;
+ }
+ /* Search field in sidebar */
+ 
+ #content .sidebar #search {
+     width: 100%;
+     border-radius: 0px;
+     height: 42px;
+     text-align: center;
+     color: rgba(208, 207, 207, 1.00);
+     font-size: 14px;
+     ;
+     margin-bottom: 21px;
+ }
+ /* Whole page content */
+ 
+ #mainWrapper {
+     width: 80%;
+     padding-left: 10%;
+ }
+ /*menu elements */
+ 
+ .menu ul li {
+     list-style-type: none;
+     font-size: x-large;
+     position: relative;
+     left: -35px;
+     padding-top: 12px;
+ }
+ /* Product rows for catalog */
+ 
+ #content .mainContent .productRow {
+     overflow: auto;
+     color: rgb(34, 149, 226);
+ }
+ /* Each product Information in the catalog */
+ 
+ .mainContent .productRow .productInfo {
+     float: left;
+     padding-left: 5%;
+     padding-right: 5%;
+     width: 22%;
+ }
+ /* Prices of a products in catalog */
+ 
+ .productRow .productInfo .price {
+     font-family: 'Montserrat', sans-serif;
+     color: rgba(146, 146, 146, 1.00);
+     font-size: 22px;
+     position: relative;
+     top: -20px;
+ }
+ /* Content holder for products in catalog*/
+ 
+ .productRow .productInfo .productContent {
+     position: relative;
+     top: -37px;
+     font-size: 14px;
+     font-family: source-sans-pro, sans-serif;
+     font-style: normal;
+     font-weight: 200;
+     color: rgb(207, 207, 208);
+     white-space: pre-wrap;
+ }
+ /* Buy button for products in catalog */
+ 
+ .productRow .productInfo .buyButton {
+     position: relative;
+     top: -48px;
+     width: 84%;
+     background-color: rgb(207, 207, 208);
+     height: 35px;
+     color: #1f7fda;
+     border-style: none;
+     font-size: 14px;
+     text-transform: uppercase;
+     margin-top: 8px;
+ }
+ /* footer */
+ 
+ #mainWrapper footer {
+     clear: both;
+     overflow: auto;
+     background-color: rgba(208, 207, 207, 1.00);
+     font-family: source-sans-pro, sans-serif;
+     font-style: normal;
+     font-weight: 200;
+     line-height: 1.8;
+     padding-top: 22px;
+     padding-left: 22px;
+     text-align: center;
+     padding-bottom: 22px;
+     padding-right: 22px;
+ }
+ /*Each footer content */
+ 
+ #mainWrapper footer div {
+     width: 27%;
+     float: left;
+     padding-left: 4%;
+     padding-right: 2%;
+     color: rgba(255, 255, 255, 1.00);
+     text-align: justify;
+ }
+ /* Links in footer */
+ 
+ footer div a {
+     color: rgba(146, 146, 146, 1.00);
+     display: block;
+     text-decoration: none;
+     text-align: center;
+ }
+ /* Product's images in catalog */
+ 
+ .productInfo div img {
+     width: 100%;
+ }
+ /*Links in sidebar */
+ 
+ .sidebar #menubar .menu ul li a {
+     color: rgba(146, 146, 146, 1.00);
+     text-decoration: none;
+ }
+ 
+ .sidebar #menubar .menu ul li a:hover {
+     color: rgba(107, 97, 97, 1.00);
+     text-decoration: none;
+ }
+ /* Menu headings in sidebar */
+ 
+ #menubar .menu h2 {
+     font-size: 14px;
+ }
+ /*Links under menus in sidebar */
+ 
+ #menubar .menu ul li a {
+     font-size: 14px;
+ }
+ /* Menus in sidebar */
+ 
+ .sidebar #menubar .menu {
+     margin-bottom: 29px;
+ }
+ /* Container for links in footer */
+ 
+ footer .footerlinks {
+     margin-top: -15px;
+ }
+ /* Media query for tablets */
+ 
+ @media screen and (max-width:700px) {
+     /* search field in sidebar */
+     #content .sidebar #search {
+         display: none;
+     }
+     /* sidebar */
+     #content .sidebar {
+         float: none;
+         width: 100%;
+         height: auto;
+         overflow: auto;
+         padding-left: 12%;
+         padding-top: 0px;
+     }
+     /* horizontal separators in sidebar */
+     #content .sidebar hr {
+         display: none;
+     }
+     /*The sidebar and maincontent of page */
+     #content {
+         position: relative;
+         top: -22px;
+         width: 100%;
+         overflow: hidden;
+     }
+     /*menu headings in sidebar */
+     #menubar .menu h2 {
+         display: inline;
+         font-size: medium;
+         padding-right: 6%;
+     }
+     /* Unordered List of links */
+     #menubar .menu ul {
+         display: inline;
+     }
+     /*list elements */
+     #menubar .menu ul li {
+         display: inline;
+         font-size: medium;
+         padding-left: 0%;
+         padding-right: 3%;
+     }
+     /*The link to be hidden in tablet view */
+     .sidebar #menubar .menu ul .notimp {
+         display: none;
+     }
+     /* menus in sidebar */
+     .sidebar #menubar .menu {
+         width: 100%;
+         text-align: center;
+         position: relative;
+         top: 16px;
+     }
+     /*menubar in sidebar */
+     #content .sidebar #menubar {
+         position: relative;
+         left: -7%;
+         overflow: hidden;
+         width: 95%;
+         padding-top: 0px;
+     }
+     /* offer banners content */
+     #mainWrapper #offer p {
+         font-size: small;
+     }
+     /* main content region of page */
+     #mainWrapper #content .mainContent {
+         overflow: hidden;
+         width: 95%;
+         margin-top: 40px;
+     }
+     /* Prices of products in catalog view */
+     .productRow .productInfo .price {
+         font-size: 19px;
+     }
+     /* Content holders in catalog view */
+     .productRow .productInfo .productContent {
+         font-size: 16px;
+     }
+     /* Buy buttons in catalog view */
+     .productRow .productInfo .buyButton {
+         font-size: 15px;
+     }
+     /* Container for links in footer */
+     #mainWrapper footer .footerlinks {
+         float: none;
+         width: 100%;
+         position: relative;
+         top: 17px;
+         clear: both;
+         text-align: center;
+         left: 0%;
+         padding-bottom: 19px;
+     }
+     /* Container for each footer divisions */
+     #mainWrapper footer div {
+         width: 44%;
+         text-align: justify;
+         font-size: 15px;
+     }
+     /* Links in footer */
+     .footerlinks p a {
+         padding-top: 0px;
+         padding-bottom: 0px;
+         display: inline;
+         padding-right: 35px;
+     }
+     /* Footer region */
+     #mainWrapper footer {
+         padding-left: 16px;
+         overflow: hidden;
+     }
+     /* Links in header */
+     header #headerLinks a {
+         padding-left: 0px;
+         padding-right: 30px;
+     }
+     /* Offer- Text banner */
+     #mainWrapper #offer {
+         padding-left: 22%;
+     }
+     /* Paragraphs in footer */
+     footer .footerlinks p {
+         display: inline;
+     }
+ }
+ /*media query for small screen devices */
+ 
+ @media screen and (max-width:480px) {
+     /*Container for links in header */
+     #mainWrapper header #headerLinks {
+         width: 100%;
+         text-align: center;
+         background-color: rgba(190, 190, 190, 1.00);
+         padding-bottom: 21px;
+     }
+     /* Logo placeholder*/
+     #mainWrapper header #logo {
+         width: 100%;
+         text-align: center;
+     }
+     /* Links in header */
+     header #headerLinks a {
+         text-align: center;
+         padding-right: 15px;
+         padding-left: 0px;
+     }
+     /*Offer - Text Banner */
+     #mainWrapper #offer {
+         padding-left: 0px;
+         text-align: center;
+     }
+     /* Menubar in sidebar */
+     #content .sidebar #menubar {
+         position: relative;
+         left: -8%;
+         text-align: center;
+     }
+     /*Menu headings in sidebar */
+     #menubar .menu h2 {
+         width: 100%;
+         display: block;
+     }
+     /* Each product in catalog view */
+     .mainContent .productRow .productInfo {
+         width: 100%;
+         display: block;
+         padding-left: 0px;
+         padding-right: 0px;
+         position: relative;
+         left: -2%;
+     }
+     #mainWrapper footer div {
+         width: 100%;
+         margin-left: -16px;
+         text-align: justify;
+         padding-bottom: 16px;
+         overflow: auto;
+     }
+     /* Unordered list for menu elements */
+     .menu ul {
+         position: relative;
+         padding-left: 24%;
+     }
+     /* Container for links in footer */
+     #mainWrapper footer .footerlinks {
+         padding-left: 8%;
+     }
+     /* Main content which excludes the sidebar */
+     #mainwrapper #content .mainContent {
+         margin-top: -81px;
+         text-align: center;
+         width: 100%;
+         padding-left: 0px;
+     }
+ }
+ 
+ input[type=number],
+ select {
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+ }
+ 
+ input[type=submit] {
+     width: 100%;
+     background-color: #1f7fda;
+     color: white;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+ 
+ input[type=submit]:hover {
+     background-color: #1f80dada;
+ }
+ 
+ .button {
+     border-radius: 4px;
+     background-color: #1f7fda;
+     border: none;
+     color: #FFFFFF;
+     text-align: center;
+     font-size: 28px;
+     padding: 20px;
+     width: 200px;
+     transition: all 0.5s;
+     cursor: pointer;
+     margin: 5px;
+ }
+ 
+ .button span {
+     cursor: pointer;
+     display: inline-block;
+     position: relative;
+     transition: 0.5s;
+ }
+ 
+ .button span:after {
+     content: '\00bb';
+     position: absolute;
+     opacity: 0;
+     top: 0;
+     right: -20px;
+     transition: 0.5s;
+ }
+ 
+ .button:hover span {
+     padding-right: 25px;
+ }
+ 
+ .button:hover span:after {
+     opacity: 1;
+     right: 0;
+ }
+ 
+ .hero {
+     /* Sizing */
+     width: 100vw;
+     height: 100vh;
+     /* Flexbox stuff */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* Text styles */
+     text-align: center;
+     color: white;
+     /* ADD THIS LINE */
+     /* Background styles */
+     background-image: url('header.jpg');
+     background-size: cover;
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+ }
+ 
+ .hero h1 {
+     /* Text styles */
+     font-size: 5em;
+     /* Margins */
+     margin-top: 0;
+     margin-bottom: 0.5em;
+ }
+ 
+ .hero .btn {
+     /* Positioning and sizing */
+     display: block;
+     width: 200px;
+     /* Padding and margins */
+     padding: 1em;
+     margin-top: 50px;
+     margin-left: auto;
+     margin-right: auto;
+     /* Text styles */
+     color: white;
+     /* CHANGE THIS LINE */
+     text-decoration: none;
+     font-size: 1.5em;
+     /* Border styles */
+     border: 3px solid white;
+     /* CHANGE THIS LINE */
+     border-radius: 20px;
+     background-color: #1f7fda;
+ }
+ 
+ .btn span {
+     cursor: pointer;
+     display: inline-block;
+     position: relative;
+     transition: 0.5s;
+ }
+ 
+ .btn span:after {
+     position: absolute;
+     opacity: 0;
+     top: 0;
+     right: -20px;
+     transition: 0.5s;
+ }
+ 
+ .btn:hover span {
+     padding-right: 25px;
+ }
+ 
+ .btn:hover span:after {
+     opacity: 1;
+     right: 0;
+ }
+ /*product page*/
+ 
+ .product-filter {
+     display: flex;
+     padding: 30px 0;
+ }
+ 
+ .sort {
+     display: flex;
+     align-self: flex-end;
+     float: left;
+ }
+ 
+ .collection-sort {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .collection-sort:first-child {
+     padding-right: 20px;
+ }
+ 
+ label {
+     color: #666;
+     font-size: 10px;
+     font-weight: 500;
+     line-height: 2em;
+     text-transform: uppercase;
+ }
+ 
+ .products {
+     display: flex;
+     flex-wrap: wrap;
+ }
+ 
+ .product-card {
+     display: flex;
+     flex-direction: column;
+     padding: 2%;
+     flex: 1 16%;
+     background-color: #FFF;
+     box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.25);
+ }
+ 
+ .product-image img {
+     width: 100%;
+ }
+ 
+ .product-info {
+     margin-top: auto;
+     padding-top: 20px;
+     text-align: center;
+ }
+ 
+ @media (max-width: 920px) {
+     .product-card {
+         flex: 1 21%;
+     }
+     .products .product-card:first-child,
+     .products .product-card:nth-child(2) {
+         flex: 2 46%;
+     }
+ }
+ 
+ @media (max-width: 600px) {
+     .product-card {
+         flex: 1 46%;
+     }
+ }
+ 
+ @media (max-width: 480px) {
+     h1 {
+         margin-bottom: 20px;
+     }
+     .product-filter {
+         flex-direction: column;
+     }
+     .sort {
+         align-self: flex-start;
+     }
+ }
+ 
+ .product-info .btn {
+     /* Positioning and sizing */
+     display: block;
+     width: 100px;
+     /* Padding and margins */
+     padding: 1em;
+     margin-top: 50px;
+     margin-left: auto;
+     margin-right: auto;
+     /* Text styles */
+     color: white;
+     /* CHANGE THIS LINE */
+     text-decoration: none;
+     /* Border styles */
+     border: 3px solid white;
+     /* CHANGE THIS LINE */
+     border-radius: 20px;
+     background-color: #1f7fda;
+ }
+ /*details page*/
+ 
+ @media only screen and (max-width: 480px) {
+     .box {
+         margin: 20px;
+     }
+     .product-info {
+         margin: 20px;
+     }
+ }
+ 
+ .container {
+     display: flex;
+     justify-content: center;
+     margin-top: 50px;
+     font-family: 'Open Sans', sans-serif;
+ }
+ 
+ .box {
+     width: 700px;
+     border-radius: 10px;
+     box-shadow: 0 0 30px 0 #999;
+ }
+ 
+ .product-img {
+     float: left;
+     margin-top: 20px;
+     transition: all 0.5s linear;
+ }
+ 
+ product-img :hover {
+     transform: scale(1.03);
+ }
+ 
+ .product-info {
+     float: right;
+     margin-top: 20px;
+     margin-right: 40px;
+ }
+ 
+ h1 {
+     margin-bottom: 50px;
+     font-weight: bold;
+     font-size: 2.5em;
+     color: #333;
+     font-family: 'Archivo Black', sans-serif;
+ }
+ 
+ .price-b {
+     margin-top: -40px;
+     font-size: 35px;
+     font-weight: bolder;
+     color: #1f7fda
+ }
+ 
+ .description {
+     margin-top: -20px;
+     margin-right: 10px;
+     font-weight: bold;
+     color: #555;
+ }
+ 
+ .color {
+     margin-top: 25px;
+     outline: none;
+     border: 2px solid #999;
+     padding: 5px;
+     border-radius: 5px;
+ }
+ 
+ .qty {
+     margin-top: 25px;
+     outline: none;
+     border: 2px solid #999;
+     padding: 5px;
+     border-radius: 5px;
+ }
+ 
+ button {
+     margin-top: 10px;
+     background: #333;
+     font-size: 1em;
+     letter-spacing: .1em;
+     text-decoration: none;
+     color: #fff;
+     padding: 15px 30px;
+     border: 0;
+     border-radius: 10px;
+     transition: all 0.3s linear;
+     margin-left: 50px;
+ }
+ 
+ button:hover {
+     background: #666;
+ }
+ /*cart.html*/
+ 
+ .container {
+     max-width: 75em;
+     width: 95%;
+     margin: 40px auto;
+     overflow: hidden;
+     border-radius: 0.6em;
+     background: #ecf0f1;
+     box-shadow: 0 0.5em 0 rgba(138, 148, 152, 0.2);
+ }
+ 
+ .heading {
+     padding: 1em;
+     position: relative;
+     z-index: 1;
+     color: #f7f7f7;
+     background: #1f7fda
+ }
+ 
+ .cart {
+     margin: 2.5em;
+     overflow: hidden;
+ }
+ 
+ .cart.is-closed {
+     height: 0;
+     margin-top: -2.5em;
+ }
+ 
+ .table {
+     background: #ffffff;
+     border-radius: 0.6em;
+     clear: both;
+     margin-bottom: 1.8em;
+ }
+ 
+ .layout-inline>* {
+     display: inline-block;
+ }
+ 
+ .align-center {
+     text-align: center;
+ }
+ 
+ .th {
+     background: #1f7fda;
+     color: #fff;
+     text-transform: uppercase;
+     font-weight: bold;
+     font-size: 1.5em;
+ }
+ 
+ .tf {
+     background: #1f7fda;
+     text-transform: uppercase;
+     text-align: right;
+     font-size: 1.2em;
+ }
+ 
+ .tf p {
+     color: #fff;
+     font-weight: bold;
+ }
+ 
+ .col {
+     padding: 1em;
+     width: 12%;
+ }
+ 
+ .col-pro {
+     width: 44%;
+ }
+ 
+ .col-pro>* {
+     vertical-align: middle;
+ }
+ 
+ .col-qty {
+     text-align: center;
+     width: 17%;
+ }
+ 
+ .col-number p {
+     font: bold 1.8em helvetica;
+ }
+ 
+ .col-total p {
+     color: #12c8b1;
+ }
+ 
+ .tf .col {
+     width: 20%;
+ }
+ 
+ .row>div {
+     vertical-align: middle;
+ }
+ 
+ .row-bg2 {
+     background: #f7f7f7;
+ }
+ 
+ .visibility-cart {
+     position: absolute;
+     color: #fff;
+     top: 0.5em;
+     right: 0.5em;
+     font: bold 2em arial;
+     border: 0.16em solid #fff;
+     border-radius: 2.5em;
+     padding: 0 0.22em 0 0.25em;
+ }
+ 
+ .col-qty>* {
+     vertical-align: middle;
+ }
+ 
+ .col-qty>input {
+     max-width: 2.6em;
+ }
+ 
+ a.qty {
+     line-height: 1em;
+     border-radius: 2em;
+     font-size: 2.5em;
+     font-weight: bold;
+     text-align: center;
+     background: #43ace3;
+     color: #fff;
+ }
+ 
+ a.qty:hover {
+     background: #3b9ac6;
+ }
+ 
+ .btn {
+     padding: 10px 30px;
+     border-radius: 0.3em;
+     font-size: 1.4em;
+     font-weight: bold;
+     background: #43ace3;
+     color: #fff;
+     box-shadow: 0 3px 0 rgba(59, 154, 198, 1)
+ }
+ 
+ .btn:hover {
+     box-shadow: 0 3px 0 rgba(59, 154, 198, 0)
+ }
+ 
+ .btn-update {
+     float: right;
+     margin: 0 0 1.5em 0;
+ }
+ 
+ .transition {
+     transition: all 0.3s ease-in-out;
+ }
