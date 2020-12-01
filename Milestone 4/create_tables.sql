@@ -1,0 +1,8 @@
+use milestone_4;
+CREATE TABLE Users(userid int AUTO_INCREMENT PRIMARY KEY not null,created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,username varchar(255) not null UNIQUE,email varchar(255),password varchar(255) not null,user_type varchar(255));
+CREATE TABLE Categories(category_id int AUTO_INCREMENT PRIMARY KEY not null,category varchar(255) not null UNIQUE,order_column int);
+CREATE TABLE Products(productid int AUTO_INCREMENT PRIMARY KEY,name varchar(255),description varchar(255),image BLOB,price int,category_id int not null,FOREIGN KEY (category_id) REFERENCES categories(category_id),featured bit not null);
+CREATE TABLE Promotions(id int AUTO_INCREMENT PRIMARY KEY,name varchar(255)not null,description varchar(255) not null,start_date date not null,end_date date not null,created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,saleprice int,discount_amount int,zipcode varchar(255),promotion_type varchar(500));
+CREATE TABLE Carts(cart_id int AUTO_INCREMENT PRIMARY key,status varchar(255)not null,created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,user_id int not null,FOREIGN KEY (user_id) REFERENCES users(userid),zip_code varchar(255) not null);
+CREATE TABLE Cart_products( cart_products_id int AUTO_INCREMENT PRIMARY key not null,cart_id int not null, FOREIGN key (cart_id) REFERENCES carts(cart_id),productid int not null,FOREIGN key (productid) REFERENCES products(productid),quantity int);
+CREATE TABLE Cart_promotions(cart_promotions_id int AUTO_INCREMENT PRIMARY key,promotion_id int not null,FOREIGN key (promotion_id) REFERENCES promotions(id),productid int not null,FOREIGN key (productid) REFERENCES products(productid));
